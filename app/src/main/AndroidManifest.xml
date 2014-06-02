@@ -22,10 +22,9 @@
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
-            </intent-filter>
-
+              <intent-filter>
+                  <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+              </intent-filter>
             <meta-data
                 android:name="com.google.android.glass.VoiceTrigger"
                 android:resource="@xml/voice_trigger" />
@@ -35,10 +34,18 @@
             android:name="io.kickflip.sdk.activity.GlassBroadcastActivity"
             android:screenOrientation="landscape" />
 
-        <service
-            android:name="io.kickflip.sdk.av.BroadcastService"
-            android:icon="@drawable/ic_launcher"
-            android:label="@string/app_name" />
+        <activity
+            android:name="io.kickflip.glasscast.CameraActivity"
+            android:screenOrientation="landscape">
+<!--
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+-->
+            <meta-data
+                android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/voice_trigger" />
+        </activity>
 
     </application>
 

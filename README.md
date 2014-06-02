@@ -2,7 +2,7 @@
 
 Live HLS Streaming proof-of-concept for Google Glass. Powered by [Kickflip](https://kickflip.io).
 
-It's reccomended to have your Glass connected to Wifi before proceeding.
+I recommended you connect your Glass to Wifi vs. forwarding data through the Glass mobile app.
 
 ## SECRETS.java
 After you [sign up](https://kickflip.io) for a Kickflip account, copy your API keys to `SECRETS.java`:

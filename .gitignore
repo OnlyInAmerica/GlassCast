@@ -1,0 +1,9 @@
+app/src/main/java/io/kickflip/glasscast/SECRETS.java
+gradle.properties
+build/
+.idea/
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+.DS_Store

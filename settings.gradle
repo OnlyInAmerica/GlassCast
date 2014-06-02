@@ -1,0 +1,2 @@
+include ':app',
+        ':submodules:kickflip-android-sdk:sdk'

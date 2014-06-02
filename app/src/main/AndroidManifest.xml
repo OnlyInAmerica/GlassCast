@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.kickflip.glasscast">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+
+        <uses-library
+            android:name="com.google.android.glass"
+            android:required="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/voice_trigger" />
+        </activity>
+
+        <activity
+            android:name="io.kickflip.sdk.activity.GlassBroadcastActivity"
+            android:screenOrientation="landscape" />
+
+        <service
+            android:name="io.kickflip.sdk.av.BroadcastService"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name" />
+
+    </application>
+
+</manifest>

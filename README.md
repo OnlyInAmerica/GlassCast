@@ -8,15 +8,15 @@ I recommended you connect your Glass to Wifi vs. forwarding data through the Gla
 After you [sign up](https://kickflip.io) for a Kickflip account, copy your API keys to `SECRETS.java`:
 
 ```
-$ touch ./app/src/main/java/io/kickflip/sample/SECRETS.java
+$ touch ./app/src/main/java/io/kickflip/glasscast/SECRETS.java
 ```
 
 ```java
-		package io.kickflip.sample;
-		public class SECRETS {
-		    public static final String CLIENT_KEY = "YourKickflipKey";
-		    public static final String CLIENT_SECRET = "YourKickflipSecret";
-		}
+package io.kickflip.glasscast;
+public class SECRETS {
+    public static final String CLIENT_KEY = "YourKickflipKey";
+    public static final String CLIENT_SECRET = "YourKickflipSecret";
+}
 ```
 
 ## Build & Install

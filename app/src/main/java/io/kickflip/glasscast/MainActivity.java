@@ -28,9 +28,10 @@ public class MainActivity extends Activity {
             public void onSuccess(Response response) {
                 String outputLocation = new File(getFilesDir(), "index.m3u8").getAbsolutePath();
                 Kickflip.setSessionConfig(new SessionConfig.Builder(outputLocation)
-                        .withVideoBitrate(1 * 1000 * 1000)
+                        .withVideoBitrate(2 * 1000 * 1000)
                         .withLocation(false)
-                        .withVideoResolution(720, 480)
+                        .withAdaptiveStreaming(false)
+                        .withVideoResolution(1280, 720)
                         .build());
                 Kickflip.startGlassBroadcastActivity(MainActivity.this, new BroadcastListener() {
                     @Override

@@ -6,7 +6,7 @@ android {
     buildToolsVersion "19.1.0"
 
     defaultConfig {
-        packageName "io.kickflip.glasscast"
+        applicationId "io.kickflip.glasscast"
         minSdkVersion 19
         targetSdkVersion 19
         versionCode 1

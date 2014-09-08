@@ -22,6 +22,7 @@ public class SECRETS {
 ## Build & Install
 
 ```
+$ git clone https://github.com/OnlyInAmerica/GlassCast.git --recursive
 $ ./gradlew assembleDebug
 $ adb install -r ./app/build/apk/app-debug-unaligned.apk
 
